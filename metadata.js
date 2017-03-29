@@ -18,7 +18,8 @@
 			thirdPartyNotices: 'node_modules/monaco-typescript/ThirdPartyNotices.txt',
 			paths: {
 				npm: 'node_modules/monaco-typescript/release',
-				dev: '/monaco-typescript/out'
+				dev: '/monaco-typescript/out',
+				dist: '/monaco-typescript/release'
 			}
 		},{
 			name: 'monaco-css',
