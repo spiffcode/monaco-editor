@@ -11,23 +11,23 @@ var typedoc = require("gulp-typedoc");
 var CleanCSS = require('clean-css');
 var uncss = require('uncss');
 
-var devBasePath = '..';
+var devBasePath = '.';
 var devPathMap = {
-    'monaco-typescript': 'dist'
+	'spiffcode-typescript': 'dist'
 };
 var devPathSet = new Set();
 function pluginPath(plugin) {
-    var pull_path;
-    if (plugin.name in devPathMap) {
-        pull_path = path.join(devBasePath, plugin.paths[devPathMap[plugin.name]]);
-    } else {
-        pull_path = plugin.paths.npm;
-    }
-    if (!devPathSet.has(pull_path)) {
-        console.log('pulling from ' + pull_path);
-        devPathSet.add(pull_path);
-    }
-    return pull_path;
+	var pull_path;
+	if (plugin.name in devPathMap) {
+		pull_path = path.join(devBasePath, plugin.paths[devPathMap[plugin.name]]);
+	} else {
+		pull_path = plugin.paths.npm;
+	}
+	if (!devPathSet.has(pull_path)) {
+		console.log('pulling from ' + pull_path);
+		devPathSet.add(pull_path);
+	}
+	return pull_path;
 }
 
 var WEBSITE_GENERATED_PATH = path.join(__dirname, 'website/playground/new-samples');

@@ -11,7 +11,9 @@
 				releaseMin: 'release/min/vs',
 			}
 		},
-		PLUGINS: [{
+		PLUGINS: [
+/*
+		{
 			name: 'monaco-typescript',
 			contrib: 'vs/language/typescript/src/monaco.contribution',
 			modulePrefix: 'vs/language/typescript',
@@ -21,7 +23,17 @@
 				dev: '/monaco-typescript/out',
 				dist: '/monaco-typescript/release'
 			}
-		},{
+		},
+*/
+		{																 
+			name: 'spiffcode-typescript',								  
+			contrib: 'vs/language/typescript/spiffcode.contribution',	  
+			modulePrefix: 'vs/language/typescript',					   
+			paths: {													  
+				dist: 'spiffcode-typescript'							   
+			}															 
+		}, 
+		{
 			name: 'monaco-css',
 			contrib: 'vs/language/css/monaco.contribution',
 			modulePrefix: 'vs/language/css',
