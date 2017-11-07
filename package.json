@@ -1,6 +1,5 @@
 {
   "name": "spiffcode-monaco-editor",
-  "private": true,
   "version": "0.10.1",
   "description": "A browser based code editor",
   "author": "Microsoft Corporation",
@@ -13,7 +12,7 @@
   "typings": "./monaco.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/monaco-editor"
+    "url": "https://github.com/spiffcode/monaco-editor"
   },
   "devDependencies": {
     "clean-css": "^3.4.20",
