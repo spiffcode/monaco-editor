@@ -1,7 +1,7 @@
 {
   "name": "spiffcode-monaco-editor",
   "private": true,
-  "version": "0.10.1",
+  "version": "0.10.1-alpha.1",
   "description": "A browser based code editor",
   "author": "Microsoft Corporation",
   "license": "MIT",
